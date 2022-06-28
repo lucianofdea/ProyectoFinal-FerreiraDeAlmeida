@@ -1,0 +1,14 @@
+<div class="position-relative">
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <span>1PF-Ferreira de Almeida</span>
+    <button appFuentes class="boton-li" mat-button *ngFor="let item of menu"
+      [routerLink]="item.redirect">{{item.nombre}} </button>
+    <span class="example-spacer"></span>
+    <button mat-icon-button routerLink="/login">
+      <mat-icon appFuentes class="boton">logout</mat-icon>
+    </button>
+  </mat-toolbar>
+</div>
