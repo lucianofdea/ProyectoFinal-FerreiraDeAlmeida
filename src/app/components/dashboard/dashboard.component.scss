@@ -1,15 +1,21 @@
-.contenedor {
-  height: 100vh !important;
-  background-size: 0%;
-  background-color: rgb(236, 174, 146);
+.contenedor{
+    height: 100%;
+    background-size: 0%;
+    background-color: rgb(204, 132, 252);
+  
+}
+.bg-barra{
+    background-color: rgb(150, 98, 163);
+    color:white;
+}
+.boton{
+    background-color:  rgb(83, 197, 154);
 }
 
-div.container-fluid{
-  padding: 0px;
+.side {
+  display: flex;
+  flex-direction: column;
 }
-
-.bg-barra {
-  background-color: rgb(71, 35, 80);
+.altura{
+  height: calc(100% - 130px);
 }
-
-

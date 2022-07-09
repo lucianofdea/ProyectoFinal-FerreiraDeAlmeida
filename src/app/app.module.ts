@@ -1,13 +1,18 @@
-import { SharedModule } from './components/shared/shared.module';
-import { NgModule } from '@angular/core';
+import { MaterialModule } from './components/material/material.module';
+import { Inject, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './core/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
-
-import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -15,17 +20,22 @@ import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,  
-    
+    LoginComponent,
+        
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,   
-    SharedModule,
-    
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
