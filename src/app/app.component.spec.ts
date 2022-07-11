@@ -20,7 +20,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '2PF-Carnevalle'`, () => {
+  it(`should have as title '2PF-Ferreira de Almeida'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
   
@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('2PF-Carnevalle app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('2PF-Ferreira de Almeida app is running!');
   });
 });

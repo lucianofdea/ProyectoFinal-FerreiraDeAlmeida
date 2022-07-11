@@ -1,26 +1,36 @@
-.body{
-    background-color: rgb(216, 138, 252);
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Black+Han+Sans&display=swap');
+
+.contenedor{
+    background-image: url("../../../assets/images/fondo_login.jpg");
     background-size: cover;
-    background-attachment: fixed; 
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+
+.login{
+    max-width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;     
 }
-.login{
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-    padding: 50px;
-    background-color: rgb(83, 197, 154);
-    backdrop-filter: blur(px);
-    border-radius: 100px;
-    border: 1px solid rgb(12, 75, 59);
-    box-shadow: 30px 30px 30px rgb(150, 98, 163);
-}
+
 .ancho{
     width: 90%;
 }
 .spinner{
     margin: 0 auto;
+}
+
+h1{
+    font-family: 'Amaranth', sans-serif;
+}
+
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #a5ff09;
+}
+
+.form{
+    text-align: center;
 }

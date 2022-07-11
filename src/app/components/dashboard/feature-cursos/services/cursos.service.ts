@@ -7,14 +7,14 @@ import { Injectable } from '@angular/core';
 export class CursosService {
 
   ListaCursos: Cursos[] = [
-    {id: 1, cursoNombre: "Node.JS", cursoDias:"martes y jueves", precio: 400000, profesor: "Felipe Bravo", detalle:"Curso de node"},
-    {id: 1, cursoNombre: "Angular", cursoDias:"lunes y miércoles", precio: 350000, profesor: "Josefina Montich", detalle:"Curso de angular"},
-    {id: 1, cursoNombre: "Vue.Js", cursoDias:"viernes y sábado", precio: 300000, profesor: "Juan Muñoz", detalle:"Curso de Vue"},
-    {id: 1, cursoNombre: "UX/UI", cursoDias:"sábado", precio: 300000, profesor: "Nicolas Tosi", detalle:"Curso de Ux/Ui"},
-    {id: 1, cursoNombre: "Node.JS", cursoDias:"martes y jueves", precio: 400000, profesor: "Felipe Bravo", detalle:"Curso de node"},
-    {id: 1, cursoNombre: "Angular", cursoDias:"lunes y miércoles", precio: 350000, profesor: "Josefina Montich", detalle:"Curso de angular"},
-    {id: 1, cursoNombre: "Vue.Js", cursoDias:"viernes y sábado", precio: 300000, profesor: "Juan Muñoz", detalle:"Curso de Vue"},
-    {id: 1, cursoNombre: "UX/UI", cursoDias:"sábado", precio: 300000, profesor: "Nicolas Tosi", detalle:"Curso de Ux/Ui"},
+    {id: 1, cursoNombre: "Node.JS", cursoDias:"martes y jueves", precio: 40000, profesor: "Jorge Barcinilla", detalle:"Curso de node"},
+    {id: 1, cursoNombre: "Angular", cursoDias:"lunes y miércoles", precio: 35000, profesor: "Alfredo Leuco", detalle:"Curso de angular"},
+    {id: 1, cursoNombre: "Vue.Js", cursoDias:"viernes y sábado", precio: 30000, profesor: "Agusto Silvestre", detalle:"Curso de Vue"},
+    {id: 1, cursoNombre: "UX/UI", cursoDias:"sábado", precio: 300000, profesor: "Luis Novaresio", detalle:"Curso de Ux/Ui"},
+    {id: 1, cursoNombre: "Node.JS", cursoDias:"martes y jueves", precio: 40000, profesor: "Jorge Barcinilla", detalle:"Curso de node"},
+    {id: 1, cursoNombre: "Angular", cursoDias:"lunes y miércoles", precio: 35000, profesor: "Alfredo Leuco", detalle:"Curso de angular"},
+    {id: 1, cursoNombre: "Vue.Js", cursoDias:"viernes y sábado", precio: 30000, profesor: "Agusto Silvestre", detalle:"Curso de Vue"},
+    {id: 1, cursoNombre: "UX/UI", cursoDias:"sábado", precio: 300000, profesor: "Luis Novaresio", detalle:"Curso de Ux/Ui"},
   ];
   constructor() { }
 
