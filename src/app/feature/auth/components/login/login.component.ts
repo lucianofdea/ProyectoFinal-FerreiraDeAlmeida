@@ -10,7 +10,7 @@ import { cargarSesion, loginAction } from '../../state/auth.actions';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
   formLogin!: FormGroup;
