@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+  }
+  .toolbar-container{
+    
+    background-color:  rgb(150, 98, 163);
+    border-radius: 50px;
+    
+  }
+  .bg-div{
+    background-color: rgb(150, 98, 163);
+  }
+  
+  .footer i {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  

@@ -1,0 +1,24 @@
+
+.titulo{
+    border-radius: 15px;
+    background-color:rgb(83, 197, 154) ;
+  
+  }
+  .bg{
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 15px;
+  
+  }
+  
+  .reiniciar{
+    color:aliceblue;
+    background-color: rgb(83, 197, 154);
+  }
+  
+  .agregar{
+    color:aliceblue;
+    background-color: rgb(83, 197, 154);
+  }
+  
+  

@@ -1,41 +1,51 @@
-import { MaterialModule } from './components/material/material.module';
-import { Inject, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './core/login/login.component';
-import { HttpClientModule } from '@angular/common/http';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-
-
-
-
+import { AppRoutingModule } from './core/app-routing.module';
+import { AlumnosModule } from './feature/alumnos/alumnos.module';
+import { CursosModule } from './feature/cursos/cursos.module';
+import { SharedModule } from './shared/shared.module';
+import { InscripcionesModule } from './feature/inscripciones/inscripciones.module';
+import { UsuariosModule } from './feature/usuarios/usuarios.module';
+import { AlumnosRoutingModule } from './feature/alumnos/alumnos-routing.module';
+import { InscripcionesRoutingModule } from './feature/inscripciones/inscripciones-routing.module';
+import { UsuariosRoutingModule } from './feature/usuarios/usuarios-routing.module';
+import { CursosRoutingModule } from './feature/cursos/cursos-routing.module';
+import { AuthModule } from './feature/auth/auth.module';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-        
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule,
+    AlumnosRoutingModule,
+    CursosRoutingModule,
+    InscripcionesRoutingModule,
+    UsuariosRoutingModule,
+    CoreModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    HttpClientModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    AlumnosModule,
+    CursosModule,
+    InscripcionesModule,
+    UsuariosModule,
+    AuthModule,
+    StoreModule.forRoot({}),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+      name: 'Cargar y cursos cargados en la lista',
+    }),
+    EffectsModule.forRoot([]),
+    StoreModule.forRoot({}, {}),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

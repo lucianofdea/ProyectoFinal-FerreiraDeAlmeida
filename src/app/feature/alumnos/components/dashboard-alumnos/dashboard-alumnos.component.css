@@ -1,0 +1,26 @@
+.bg-sombra{
+    box-shadow:  rgb(83, 197, 154) ;
+  }
+  .titulo{
+    border-radius: 15px;
+    background-color:rgb(83, 197, 154) ;
+  
+  }
+  
+  table {
+    width: 100%;
+    background-color: transparent;
+    
+  }
+  mat-header-cell,
+  mat-cell {
+    justify-content: center;
+  }
+  
+  td,
+  th {
+    color: white;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  

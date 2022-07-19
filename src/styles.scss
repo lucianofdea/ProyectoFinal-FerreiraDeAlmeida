@@ -1,4 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url(assets/images/fondo_login.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.full-width {
+  width: 100%;
+}
+
+.full-width-min {
+  min-width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

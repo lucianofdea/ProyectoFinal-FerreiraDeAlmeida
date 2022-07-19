@@ -1,4 +1,3 @@
-
 export interface Estudiantes {
     id: number;
     nombre: string;
@@ -15,8 +14,6 @@ export interface Estudiantes {
     edad:number;
     correo: string;
     telefono: number;
-  
-  
   }
   
   

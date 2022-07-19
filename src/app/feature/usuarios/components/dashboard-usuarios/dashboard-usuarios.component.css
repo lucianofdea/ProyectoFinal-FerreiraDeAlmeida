@@ -1,0 +1,23 @@
+table {
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  .titulo{
+    border-radius: 15px;
+    background-color:rgba(23, 226, 145, 0.928);
+  
+  }
+  
+  mat-header-cell,
+  mat-cell {
+    justify-content: center;
+  }
+  
+  td,
+  th {
+  
+    color: aliceblue;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
