@@ -24,3 +24,7 @@
     vertical-align: middle !important;
   }
   
+  ::ng-deep .form-control:disabled, .form-control[readonly] {
+    background-color: #4c4c4c;
+    opacity: 1;
+}
